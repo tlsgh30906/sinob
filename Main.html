@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>World Beer</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="total.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="3dbox.css">
+</head>
+<body>
+  <div id="전체화면">
+    <!--Navbar (sit on content)-->
+    <div class="navtotal">
+        <div class="navtop">
+            <a href="Main" class="navtop">SINOB Beers</a>
+          </div>
+          <div class="navright">
+            <div class="nav0">
+              <a href="nav0" class="nav0">About</a>
+            </div>
+              <div class="nav1">
+                <a href="nav1" class="nav1">History</a>
+              </div>
+              <div class="nav2">
+                <a href="nav2" class="nav2">Style</a>
+              </div>
+              <div class="nav3">
+                <a href="nav3" class="nav3">ETC</a>
+              </div>
+            </div>
+          </div>
+
+    <div id="header" class="header">
+      <h1><a href="#"><img src="logo1.jpg" alt="logo" style="width:300px; height:100px;"></a></h1>
+    </div>
+<hr>
+    <div id="slider" class="slider">
+      <ul>
+        <div class="slidertext" data-text="Belgium Beer"><li><a href="#">Belgium Beer</a></li></div>
+        <div class="slidertext" data-text="USA Beer"><li><a href="#">USA Beer</a></li></div>
+        <div class="slidertext" data-text="UK Beer"><li><a href="#">UK Beer</a></li></div>
+        <div class="slidertext" data-text="Germany Beer"><li><a href="#">Germany Beer</a></li></div>
+        <div class="slidertext" data-text="ETC Beer"><li><a href="#">ETC Beer</a></li></div>
+      </ul>
+    </div>
+    <div id="content" class="content">
+      <div id="threedcube" class="threedcube">
+      <!-- CONTROLS -->
+    <input type="radio" checked id="radio-front" name="select-face"/>
+    <input type="radio" id="radio-left" name="select-face"/>
+    <input type="radio" id="radio-right" name="select-face"/>
+    <input type="radio" id="radio-top" name="select-face"/>
+    <input type="radio" id="radio-bottom" name="select-face"/>
+    <input type="radio" id="radio-back" name="select-face"/>
+    <div></div><!-- separator -->
+
+
+      <div class="scene">
+
+        <div class="cube">
+            <div class="cube-face cube-face-front"></div>
+            <div class="cube-face cube-face-back"></div>
+            <div class="cube-face cube-face-left"></div>
+            <div class="cube-face cube-face-right"></div>
+            <div class="cube-face cube-face-top"></div>
+            <div class="cube-face cube-face-bottom"></div>
+        </div>
+    </div>
+  </div>
+      </div>
+
+    <div id="footer" class="footer">
+      <h3>foot내용</h3>
+    </div>
+
+</body>
+</html>

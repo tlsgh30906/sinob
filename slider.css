@@ -1,0 +1,25 @@
+#slider{
+  text-align: center;
+  width:inherit;
+  border: none;
+}
+#slider ul{
+  margin:0;
+  display: -webkit-inline-box;
+}
+#slider li{
+  margin-left: 20;
+  color:brown;
+}
+.slidertext{
+  margin-left: 15px;
+  padding: 15px;
+}
+.slidertext:hover{
+  text-shadow: 0 0 20px red;
+  filter:blur(0.4px);
+}
+
+.slidertext{
+  width:fit-content;
+}

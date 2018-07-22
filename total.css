@@ -1,0 +1,30 @@
+div{
+  border: 0px;
+  display: block;
+}
+a{
+  text-decoration: none;
+}
+#전체화면{
+  width: 1200px;
+  margin: 0 auto;
+}
+body{
+  font-family: "Times New Roman", Georgia, serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Playfair Display"
+  letter-spacing: 5px;
+}
+/*unvisited link*/
+a:link{
+  color: black;
+}
+/*visited link*/
+a:visited{
+  color: orange;
+}
+/*mouse over link*/
+a:hover{
+  color: brown;
+}

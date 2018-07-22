@@ -1,0 +1,87 @@
+#threedcube{
+  text-align: center;
+  margin-bottom:90px;
+}
+.scene{
+  display:inline-block;
+  width: 150px;
+  height: 150px;
+  perspective: 650px;
+}
+
+.cube{
+margin-top: 50px;
+display:inline-block;
+transition: all 0.85s cubic-bezier(0.175,0.885,0.320,1.275);
+text-align: center;
+position: relative;
+width: 150px;
+height: 150px;
+transform-style: preserve-3d;
+transform: rotateX(-15deg) rotateY(15deg);
+}
+
+.cube-face{
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid #888;
+  background: #fff;
+  box-shadow: inset 0 0 60px rgba(250, 250, 0, 0.8),
+  0 0 60px rgba(250, 250, 0, 0.5);
+  color:#333;
+  line-height: 250px;
+  opacity: 0.8;
+}
+
+
+.cube-face-front{
+  width: 150px;
+  height: 150px;
+  transform: translate3d(0, 0, 75px);
+}
+.cube-face-top{
+
+  width: 150px;
+  height: 150px;
+  transform: rotateX(90deg) translate3d(0, 0, 75px);
+}
+.cube-face-bottom{
+  width: 150px;
+  height: 150px;
+  transform: rotateX(-90deg) translate3d(0, 0, 75px);
+}
+.cube-face-left{
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  margin-left: -75px;
+  transform: rotateY(-90deg) translate3d(0, 0, 75px);
+}
+.cube-face-right {
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  margin-left: -75px;
+  transform: rotateY(90deg) translate3d(0, 0, 75px);
+}
+.cube-face-back {
+  width: 150px;
+  height: 150px;
+  transform: rotateY(180deg) translate3d(0, 0, 75px);
+}
+
+#radio-left:checked ~ .scene .cube{
+  transform: rotateY(90deg);
+}
+#radio-right:checked ~ .scene .cube{
+  transform: rotateY(-90deg);
+}
+#radio-bottom:checked ~ .scene .cube{
+  transform: rotateX(90deg);
+}
+#radio-top:checked ~ .scene .cube{
+  transform: rotateX(-90deg);
+}
+#radio-back:checked ~ .scene .cube{
+  transform: rotateY(180deg);
+}
